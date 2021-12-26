@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <title>Zakir Dawood</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <!-- jQuery 1.8 or later, 33 KB -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <!-- Fotorama from CDNJS, 19 KB -->
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'skills.css'%}">
+        <link rel="icon" href="{% static 'logo.jpg' %}">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="main-body">
+    <div class="ui container">
+
+        <br>
+
+        <div class="ui centered grid">
+            <div class="sixteen columns">
+                <div class="ui text menu" id="menu">
+                    <a class="item" id="menu-item" href="/home">Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a class="item active" id="menu-item" href="/skills" style="color: crimson;">Skills&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a class="item" id="menu-item" href="/projects">Projects&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a class="item" id="menu-item" href="/gallery">Gallery&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a class="item" id="menu-item" href="/contact">Contact&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <h1 class="ui header" style="text-align:left; color: crimson; animation: fade-up 650ms 400ms backwards;">
+            Skills
+        </h1>
+
+        <br>
+
+        <div class="ui grid container" style="animation: fade-up 650ms 400ms backwards;">
+            <div class="ui stackable seven column grid card-tech" id="card">
+                <h2 class="ui header" style="color: black;">Languages</h2>
+                <div class="card-tech" style="width: 100%; background-color: rgb(241, 58, 58); border-radius: 10px; padding: 1.5%; color: white;">
+                    <strong>Python</strong>
+                    <img src="https://img.icons8.com/ios/24/000000/python--v1.png" style="float: right;"/>
+                </div>
+                <br>
+                <div class="card-tech" style="width: 90%; background-color: rgb(233, 74, 74); border-radius: 10px; padding: 1.5%; color:white">
+                    <strong>HTML</strong>
+                    <img src="https://img.icons8.com/small/24/000000/html-5.png" style="float: right;"/>
+                </div>
+                <br>
+                <div class="card-tech" style="width: 80%; background-color: rgb(226, 90, 90); border-radius: 10px; padding: 1.5%; color:white">
+                    <strong>Java</strong>
+                    <img src="https://img.icons8.com/material-outlined/24/000000/java-coffee-cup-logo.png" style="float: right;"/>
+                </div>
+                <br>
+                <div class="card-tech" style="width: 70%; background-color: rgb(235, 124, 124); border-radius: 10px; padding: 1.5%; color:white">
+                    <strong>CSS</strong>
+                    <img src="https://img.icons8.com/ios/24/000000/css3.png" style="float: right;"/>
+                </div>
+                <br>
+                <div class="card-tech" style="width: 60%; background-color: rgb(241, 149, 149); border-radius: 10px; padding: 1.5%; color:white">
+                    <strong>PHP</strong>
+                    <img src="https://img.icons8.com/ios/24/000000/php-logo.png" style="float: right;"/>
+                </div>
+                <br>
+                <div class="card-tech" style="width: 50%; background-color: rgb(238, 171, 171); border-radius: 10px; padding: 1.5%; color:white">
+                    <strong>JavaScript</strong>
+                    <img src="https://img.icons8.com/ios/24/000000/javascript--v1.png" style="float: right;"/>
+                </div>
+                <br>
+                <div class="card-tech" style="width: 50%; background-color: rgb(238, 171, 171); border-radius: 10px; padding: 1.5%; color:white">
+                    <strong>C</strong>
+                    <img src="https://img.icons8.com/ios/24/000000/c.png" style="float: right;"/>
+                </div>
+                <br><br>
+                *Languages displayed according to proficiency
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="ui grid container" style="animation: fade-up 650ms 400ms backwards;">
+            <div class="ui stackable seven column grid card-tech" id="card">
+                <h2 class="ui header" style="color: black;">Technology</h2>
+                <div class="column card-tech" id="card" style="width: fit-content; padding: 1%; background-color: rgb(221, 216, 216); display: inline-block; text-align: center;">
+                    <strong>VSCode</strong>&nbsp;&nbsp;
+                    <img src="https://img.icons8.com/windows/18/000000/visual-studio.png"/>
+                </div>
+                &nbsp;
+                <div class="column card-tech" id="card" style="width: fit-content; padding: 1%; background-color: rgb(221, 216, 216); display: inline-block; text-align: center;">
+                    <strong>Git</strong>&nbsp;&nbsp;
+                    <img src="https://img.icons8.com/ios-filled/18/000000/git.png"/>
+                </div>
+                &nbsp;
+                <div class="column card-tech" id="card" style="width: fit-content; padding: 1%; background-color: rgb(221, 216, 216); display: inline-block; text-align: center;">
+                    <strong>Github</strong>&nbsp;&nbsp;
+                    <img src="https://img.icons8.com/material-outlined/18/000000/github.png"/>
+                </div>
+                &nbsp;
+                <div class="column card-tech" id="card" style="width: fit-content; padding: 1%; background-color: rgb(221, 216, 216); display: inline-block; text-align: center;">
+                    <strong>Emacs</strong>&nbsp;&nbsp;
+                    <img src="https://img.icons8.com/material-outlined/18/000000/code.png"/>
+                </div>
+                &nbsp;
+                <div class="column card-tech" id="card" style="width: fit-content; padding: 1%; background-color: rgb(221, 216, 216); display: inline-block; text-align: center;">
+                    <strong>Heroku</strong>&nbsp;&nbsp;
+                    <img src="https://img.icons8.com/ios/18/000000/heroku.png"/>
+                </div>
+                &nbsp;
+                <div class="column card-tech" id="card" style="width: fit-content; padding: 1%; background-color: rgb(221, 216, 216); display: inline-block; text-align: center;">
+                    <strong>Linux</strong>&nbsp;&nbsp;
+                    <img src="https://img.icons8.com/material-outlined/18/000000/console.png"/>
+                </div>
+                &nbsp;
+                <div class="column card-tech" id="card" style="width: fit-content; padding: 1%; background-color: rgb(221, 216, 216); display: inline-block; text-align: center;">
+                    <strong>MS Office</strong>&nbsp;&nbsp;
+                    <img src="https://img.icons8.com/ios-filled/18/000000/microsoft.png"/>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br><br><br><br>
+
+    </div>
+
+    <footer>
+        <br>
+        <p style="text-align: center;"><strong>A portfolio site made by Zakir Dawood for Zakir Dawood</strong></p>
+        <br>
+    </footer>
+</body>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <title>Zakir Dawood</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <!-- jQuery 1.8 or later, 33 KB -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <!-- Fotorama from CDNJS, 19 KB -->
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'contact.css'%}">
+        <link rel="icon" href="{% static 'logo.jpg' %}">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="main-body">
+    <div class="ui container">
+
+    <br>
+
+    <div class="ui centered grid">
+        <div class="sixteen columns">
+            <div class="ui text menu" id="menu">
+                <a class="item" id="menu-item" href="/home">Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/skills">Skills&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/projects">Projects&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/gallery">Gallery&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item active" id="menu-item" href="/contact" style="color: crimson;">Contact&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <h1 class="ui header" style="text-align:left; color: crimson; animation: fade-up 650ms 400ms backwards;">
+        Contact Me
+    </h1>
+
+    <br>
+
+    <form class="ui form" style="animation: fade-up 650ms 400ms backwards;" action="send/" method="post">
+        {% csrf_token %}
+        <div class="field">
+            <label>Your Name:</label>
+            <input type="text" placeholder="Type your first and last name here" name="message-name">
+        </div>
+
+        <div class="field">
+            <label>Your Email Address:</label>
+            <input type="text" placeholder="Please enter a valid email address to be contacted at" name="message-email">
+        </div>
+
+        <div class="field">
+            <label>Subject:</label>
+            <input type="text" placeholder="Type your reason for contact here" name="message-subject">
+        </div>
+
+        <div class="field">
+            <label>Comments:</label>
+            <textarea rows="7" placeholder="Type your message here" name="message"></textarea>
+        </div>
+
+        <button class="ui button" type="submit" id="submit-button">Send Message</button>
+    </form>
+
+    <br>
+
+    <h1 class="ui header" style="text-align:left; color: crimson; animation: fade-up 650ms 400ms backwards;">
+        Socials
+    </h1>
+
+    <br><br>
+ 
+    <div class="ui grid">
+        <div class="doubling six column row">
+            <a href="https://www.linkedin.com/in/zakirdawood/" target="_blank" style="text-decoration: none; color:#1b1919;" class="column">
+                <ion-icon name="logo-linkedin" class="social-icon"></ion-icon>
+            </a>
+            <a href="https://github.com/zakirdawood" target="_blank" style="text-decoration: none; color:#1b1919;" class="column">
+                <ion-icon name="logo-github" class="social-icon"></ion-icon>
+            <a href = "mailto: zakir.dawood@ryerson.ca" target="_blank" style="text-decoration: none; color:#1b1919;" class="column">
+                <ion-icon name="mail-outline" class="social-icon"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/zakir_dawood" target="_blank" style="text-decoration: none; color:#1b1919;" class="column">
+                <ion-icon name="logo-instagram" class="social-icon"></ion-icon>
+            </a>
+            <a href="https://open.spotify.com/user/zakirdawood?si=6d8a5ede66a44e57" target="_blank" style="text-decoration: none; color:#1b1919;" class="column">
+                <ion-icon name="musical-notes-outline" class="social-icon"></ion-icon>
+            </a>
+            <a href="https://vsco.co/zd74" target="_blank" style="text-decoration: none; color:#1b1919;" class="column"> 
+                <ion-icon name="camera-outline" class="social-icon"></ion-icon>
+            </a>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    </div>
+
+    <footer>
+        <br>
+        <p style="text-align: center;"><strong>A portfolio site made by Zakir Dawood for Zakir Dawood</strong></p>
+        <br>
+    </footer>
+</body>

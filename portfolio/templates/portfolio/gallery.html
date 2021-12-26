@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <title>Zakir Dawood</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <!-- jQuery 1.8 or later, 33 KB -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <!-- Fotorama from CDNJS, 19 KB -->
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'gallery.css'%}">
+        <link rel="icon" href="{% static 'logo.jpg' %}">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="main-body">
+    <div class="ui container">
+
+        <br>
+
+        <div class="ui centered grid">
+            <div class="sixteen columns">
+                <div class="ui text menu" id="menu">
+                    <a class="item" id="menu-item" href="/home">Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a class="item" id="menu-item" href="/skills">Skills&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a class="item" id="menu-item" href="/projects">Projects&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a class="item active" id="menu-item" href="/gallery" style="color: crimson;">Gallery&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a class="item" id="menu-item" href="/contact">Contact&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <h1 class="ui header" style="text-align:center; color: black; animation: fade-up 650ms 400ms backwards;">
+            "We take photos as a <p style="color: crimson; display: inline-block;">return ticket</p> to a <p style="color: crimson; display: inline-block;">moment</p> otherwise gone"
+        </h1>
+
+
+        <br><br>
+
+        <div class="doubling sixteen wide column card-tech" id="card" style="animation: fade-up 650ms 400ms backwards; text-align: center; width: 100%;">
+            <h2 class="ui header" style="color: black; text-align: left;">The City</h2>
+            <br>
+            <div class="fotorama" style="width: 100%;">
+                <img src="{% static 'IMG-0912.jpg' %}">
+                <img src="{% static 'IMG-4138.jpg' %}">
+                <img src="{% static 'IMG-0958.jpg' %}">
+                <img src="{% static 'IMG-0979.jpg' %}">
+                <img src="{% static 'IMG-0920.jpg' %}">
+                <img src="{% static 'IMG-1012.jpg' %}">
+                <img src="{% static 'IMG-1072.jpg' %}">
+                <img src="{% static 'IMG-2033.jpg' %}">
+            </div>
+        </div>
+
+        <br><br>
+
+        <div class="doubling sixteen wide column card-tech" id="card" style="animation: fade-up 650ms 400ms backwards; text-align: center; width: 100%;">
+            <h2 class="ui header" style="color: black; text-align: left;">The Lakes and Oceans</h2>
+            <br>
+            <div class="fotorama" style="width: 100%;">
+                <img src="{% static 'IMG-2216.jpg' %}">
+                <img src="{% static 'IMG-0899.jpg' %}">
+                <img src="{% static 'IMG-0904.jpg' %}">
+                <img src="{% static 'IMG-0906.jpg' %}">
+                <img src="{% static 'IMG-1417.jpg' %}">
+                <img src="{% static 'IMG-1427.jpg' %}">
+                <img src="{% static 'IMG-3277.jpg' %}">
+                <img src="{% static 'IMG-4822.jpg' %}">
+                <img src="{% static 'IMG-5063.jpg' %}">
+            </div>
+        </div>
+  
+        <br><br>
+
+        <div class="doubling sixteen wide column card-tech" id="card" style="animation: fade-up 650ms 400ms backwards; text-align: center; width: 100%;">
+            <h2 class="ui header" style="color: black; text-align: left;">The Streets</h2>
+            <br>
+            <div class="fotorama" style="width: 100%;">
+                <img src="{% static 'IMG-0887.jpg' %}">
+                <img src="{% static 'IMG-0881.jpg' %}">
+                <img src="{% static 'IMG-0873.jpg' %}">
+                <img src="{% static 'IMG-1033.jpg' %}">
+                <img src="{% static 'IMG-2009.jpg' %}">
+                <img src="{% static 'IMG-2029.jpg' %}">
+                <img src="{% static 'IMG-9670.jpg' %}">
+            </div>
+        </div>
+
+        <br><br><br><br><br><br>
+
+
+    </div>
+
+    <footer>
+        <br>
+        <p style="text-align: center;"><strong>A portfolio site made by Zakir Dawood for Zakir Dawood</strong></p>
+        <br>
+    </footer>
+</body>

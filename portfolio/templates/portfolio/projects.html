@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <title>Zakir Dawood</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <!-- jQuery 1.8 or later, 33 KB -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <!-- Fotorama from CDNJS, 19 KB -->
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'projects.css'%}">
+        <link rel="icon" href="{% static 'logo.jpg' %}">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="main-body">
+    <div class="ui container">
+
+    <br>
+
+    <div class="ui centered grid">
+        <div class="sixteen columns">
+            <div class="ui text menu" id="menu">
+                <a class="item" id="menu-item" href="/home">Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/skills">Skills&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item active" id="menu-item" href="/projects" style="color: crimson;">Projects&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/gallery">Gallery&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                <a class="item" id="menu-item" href="/contact">Contact&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <h1 class="ui header" style="text-align:left; color: crimson; animation: fade-up 650ms 400ms backwards;">
+        Projects
+    </h1>
+
+    <br>
+
+    <div class="ui sixteen column stackable grid" style="animation: fade-up 650ms 400ms backwards; width: 100%;">
+        <div class="seven wide column card-tech" id="card" style="width: 100%;">
+            <div>
+                <img src="{% static 'eirian.png' %}" style="height: 100%; width: 100%; border-radius: 10px;">
+            </div>
+            <h2 class="ui header" style="text-align: center; color: crimson;">Eirian</h2>
+            <p style="text-align: center;">After a year filled with academic projects and assignments, a hackathon was the perfect way to end a one of a kind academic year. At the peak of the pandemic,
+                cases were rising, and the vaccination program finally started to get underway. There were so many statistics to look out for, but no quick or efficient way 
+                to find them. My team and I decided to solve this problem with Eirian, a discord bot that delivers all the important covid-19 statistics. With the help of web
+                scraping, Eirian successfully delivered essential information to Ontarians through reliable government sources. Eirian was submitted to 
+                <a href="https://ru-hacks-2021.devpost.com/" target="_blank">RU Hacks</a>.
+            </p>
+
+            <div class="tech-list">
+                Python
+            </div>
+            <div class="tech-list">
+                Selenium Web Driver
+            </div>
+            <div class="tech-list">
+                Discord.py
+            </div>
+
+            <br><br>
+
+            <a href="https://devpost.com/software/eirian" target="_blank" class="link">
+                <ion-icon name="open-outline" size="large"></ion-icon>
+            </a>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="seven wide column card-tech" id="card">
+            <div>
+                <img src="{% static 'runnerSid.png' %}" style="height: 100%; width: 100%; border-radius: 10px;">
+            </div>
+            <h2 class="ui header" style="text-align: center; color: crimson;">Runner Sid</h2>
+            <p style="text-align: center;">
+                Every developer's first choice for a project is always a game. It's fun to design and even more fun to play. After learning about GUIs and Pygame,
+                I decided to put my skills to the test by designing a game using object-orientated programming. Users play as Sid and must reach the end of the race
+                while avoiding snakes and cannonballs fired at them. There are a total of five rounds with the difficulty increasing each round.
+            </p>
+
+            <div class="tech-list">
+                Python
+            </div>
+            <div class="tech-list">
+                Pygame
+            </div>
+
+            <br><br>
+
+            <a href="https://github.com/zakirdawood/Runner-Sid" target="_blank" class="link">
+                <ion-icon name="open-outline" size="large"></ion-icon>
+            </a>
+        </div>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    </div>
+
+    <footer>
+        <br>
+        <p style="text-align: center;"><strong>A portfolio site made by Zakir Dawood for Zakir Dawood</strong></p>
+        <br>
+    </footer>
+</body>

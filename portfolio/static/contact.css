@@ -1,0 +1,45 @@
+.social-icon {
+    font-size: 32px;
+    transition-duration: 1.5s;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.social-icon:hover {
+    font-size: 64px;
+    color: crimson;
+}
+
+#submit-button:hover {
+    color: crimson;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    margin-top: auto;
+    width:100%;
+    bottom:0;
+    left:0;
+    color: crimson;
+    position: relative;
+    background-color: rgb(194, 189, 189);
+}
+
+@keyframes fade-up {
+    0%{
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+}

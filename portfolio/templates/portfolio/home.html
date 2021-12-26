@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <title>Zakir Dawood</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+        <!-- jQuery 1.8 or later, 33 KB -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+        <!-- Fotorama from CDNJS, 19 KB -->
+        <link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'home.css'%}">
+        <link rel="icon" href="{% static 'logo.jpg' %}">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="main-body">
+    <div class="ui container">
+
+        <br>
+
+        <div class="ui centered grid">
+            <div class="sixteen columns">
+                <div class="ui text menu" id="menu">
+                    <a class="item active" id="menu-item" href="/home" style="color: crimson;">Home&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a class="item" id="menu-item" href="/skills">Skills&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a class="item" id="menu-item" href="/projects">Projects&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a class="item" id="menu-item" href="/gallery">Gallery&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <a class="item" id="menu-item" href="/contact">Contact&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+            <div style="text-align: center;">
+                <br>
+            
+                <h1 class="ui header" style="text-align:center; color: rgb(26, 25, 25); font-size: 5em; display: inline-block;" id="name">
+                    Hi! I'm&nbsp;<p style="color: crimson; display: inline-block;">Zakir</p>,
+                </h1>
+
+                <br>
+
+                <h1 class="ui header" style="text-align:center; color: rgb(26, 25, 25); font-size: 2em; display: inline-block; animation: fade-up 650ms 3.8s backwards;" id="title">
+                    and I'm a&nbsp;<p style="color: crimson; background-color:antiquewhite; display: inline-block;">software developer</p>
+                </h1>
+            </div>
+
+            <br>
+        
+            <div style="text-align: center; animation: fade-up 650ms 400ms backwards;"> 
+                <br>
+                <img class="ui centered medium circular image" src="{% static 'zakir.jpg' %}" id="bounce">
+            </div>
+
+        <br><br><br>
+
+        <div style="text-align: center; animation: fade-up 650ms 400ms backwards;">
+            <a href="https://www.linkedin.com/in/zakirdawood/" target="_blank" style="text-decoration: none; color:#1b1919;">
+                <ion-icon name="logo-linkedin" class="social-icon"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </a>
+            <a href="https://github.com/zakirdawood" target="_blank" style="text-decoration: none; color:#1b1919;">
+                <ion-icon name="logo-github" class="social-icon"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </a>
+            <a href="{% static 'ZakirDawoodResume.pdf' %}" target="_blank" style="text-decoration: none; color:#1b1919;">
+                <ion-icon name="document-outline" class="social-icon"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </a>
+            <a href="mailto: zakir.dawood@ryerson.ca" target="_blank" style="text-decoration: none; color:#1b1919;">
+                <ion-icon name="mail-outline" class="social-icon"></ion-icon>
+            </a>
+        </div>
+
+        <br><br><br><br>
+
+        <div class="doubling sixteen wide column card-tech" id="card" style="animation: fade-up 650ms 400ms backwards;">
+            <h2 class="ui header" style="color: black;">About me</h2>
+            <br>
+            <p style="font-size: 1.2em;">Growing up, I dreamt of becoming an author, writing my own books for others to read. I used to write (and draw) my own books before bringing them to class for others to enjoy.
+                When did writing stories turn into writing code? Honestly, I don't know. But one way or another, I was destined to write. <br><br>
+                I'm currently a <strong>second-year computer science student</strong> at Ryerson University. My interests lie in web development, data analytics and software engineering. 
+                And while a lot of my work is coding-based, I enjoy trying out many different things, from business to design to athletics. When I'm not completing assignments or 
+                learning new technology, I'm attending hackathons and case competitions to put my skills to the test.<br><br>
+                On this site, you'll find a snapshot of the work I do along with a little bit about myself. You may also find my resume above (document icon). For any opportunities, please 
+                contact me <a href="/contact">here</a> or through one of my socials listed.
+            </p>
+        </div>
+
+        <br><br><br><br><br><br>
+
+    </div>
+
+    <footer>
+        <br>
+        <p style="text-align: center;"><strong>A portfolio site made by Zakir Dawood for Zakir Dawood</strong></p>
+        <br>
+    </footer>
+</body>
