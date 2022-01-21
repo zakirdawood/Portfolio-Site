@@ -131,7 +131,7 @@ django_heroku.settings(locals())
 EMAIL_HOST='smtp.gmail.com'
 EMAIL_PORT=587
 EMAIL_HOST_USER=''
-EMAIL_HOST_PASSWORD=''
+EMAIL_HOST_PASSWORD='' #lately only works if you set up further app password and use that. Search it up for more info.
 EMAIL_USE_TLS=True
 
 # Activate Django-Heroku.
