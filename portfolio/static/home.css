@@ -130,3 +130,9 @@ footer{
       transform: translateY(0);
     }
 }
+
+@media only screen and (max-device-width: 768px){
+    #name {
+        font-size: 4em;
+    }
+}
